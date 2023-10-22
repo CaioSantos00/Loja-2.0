@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 #video {
   position: fixed;
   right: 0;
@@ -8,17 +9,287 @@
 }
 
 #entre {
+  display: none;
+  text-transform: uppercase;
   font-size: xx-large;
   font-weight: bold;
-  margin-top: 300px;
+  padding-top: 200px;
   position: relative;
+  text-align: center;
+  text-shadow: 0px 0px 4px rgb(255, 255, 255);
+}
+
+#entre a {
+  color: rgb(255, 255, 255);
+}
+
+#containerCard {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "cardsProdu cardsProdu cardsProdu cardsProdu ";
+  gap: 20px;
+  margin: 20px 0px;
+}
+
+.cardsProdu {
+  width: 280px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+.divImgsProdu {
+  width: 280px;
+}
+
+.imgsProdu {
+  width: 280px;
+  height: 280px;
+}
+
+.containerInfosInit {
   text-align: center;
 }
 
+@media (max-width: 1115px) {
+  #containerCard {
+    grid-template-areas: "cardsProdu cardsProdu ";
+  }
+}
+@media (max-width: 664px) {
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+  #containerCard {
+    grid-template-areas: "cardsProdu cardsProdu";
+    gap: 10px;
+  }
+  .cardsProdu {
+    width: 150px;
+    padding: 0px;
+  }
+  .divImgsProdu {
+    width: 150px;
+  }
+  .imgsProdu {
+    width: 150px;
+    height: 150px;
+  }
+  .containerInfosInit {
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+#boxFormsUser {
+  margin: 20vh auto 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 5px;
+  background: rgba(129, 127, 127, 0.35);
+  backdrop-filter: blur(13.5px);
+  color: rgb(255, 255, 255);
+}
+
+.titleForms {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.inputs {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+#btnsForms {
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#btnsForms:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+#possuiContaDiv {
+  font-size: 0.9em;
+  text-align: center;
+}
+#possuiContaDiv a {
+  color: rgb(255, 255, 255);
+}
+
+#caixaAnuncio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 1000px;
+  margin: auto;
+}
+
+#fotosAnuncio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#infoAnuncio {
+  width: 500px;
+}
+
+.btnDireEsquer {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.imgsAnuncio {
+  width: 450px;
+  height: 450px;
+}
+
+.titleAnun {
+  font-size: 1.6em;
+}
+
+.riscoQuebra {
+  margin: 2% 0%;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+#divSize {
+  margin: 1% 0%;
+}
+
+.sizeBtn {
+  font-size: 1em;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  padding: 5px 10px;
+  border: 1px solid rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.sizeBtn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#divBoxDescri {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#description {
+  display: none;
+  margin: 1% 0%;
+}
+
+#btnSaco {
+  margin: 10px 0px;
+  width: 100%;
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  border: 1px solid rgb(255, 255, 255);
+}
+#btnSaco:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.titleSaco {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1115px) {
+  #caixaAnuncio {
+    flex-wrap: wrap;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #caixaAnuncio {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 560px) {
+  #caixaAnuncio {
+    width: 300px;
+    gap: 30px;
+  }
+  #fotosAnuncio {
+    width: 300px;
+  }
+  .imgsAnuncio {
+    width: 250px;
+    height: 250px;
+  }
+  .btnDireEsquer {
+    width: 23px;
+    height: 23px;
+  }
+  .titleAnun {
+    font-size: 1.3em;
+  }
+  #description {
+    font-size: 1em;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  /*background: rgb(31,31,31);
+  background: radial-gradient(circle, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%);*/
+  background-image: url("../imgs/ceu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
 }
 
 a {
@@ -39,17 +310,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1vh 3vw;
-}
-
-#redes {
-  padding: 0vh 3vw;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  height: 30px;
+  padding: 1vh 3vw;
 }
 
 #logo {
@@ -60,14 +321,43 @@ nav {
   display: none;
 }
 
-#faixa {
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  text-align: center;
+}
+.navMenu li {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+.navMenu li a {
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.9em;
-  padding: 5px;
+  font-size: 1.4em;
+  margin: 2px 0px;
+  color: rgb(255, 255, 255);
+}
+
+#searchAndCar {
+  display: flex;
+  align-items: center;
+}
+
+#divRemoveMenu {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+#removeMenu {
+  width: 30px;
+  height: 30px;
 }
 
 .btnsMenu {
@@ -75,6 +365,25 @@ nav {
   cursor: pointer;
   outline: 0;
   background-color: transparent;
+}
+
+section {
+  margin: 5% 0%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 670px) {
+  #logo {
+    width: 100px;
+  }
+  .navMenu {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
