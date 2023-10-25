@@ -431,6 +431,7 @@
 
 #sectionProducts {
   display: flex;
+  justify-content: center;
 }
 
 .cardsProdu {
@@ -443,9 +444,58 @@
 }
 .divImgProdu img {
   width: 250px;
-  border-radius: 5px;
 }
 
+@media screen and (max-width: 1300px) {
+  #sectionCar {
+    margin: 20px 200px;
+  }
+}
+@media screen and (max-width: 1117px) {
+  #sectionCar {
+    margin: 20px 150px;
+  }
+}
+@media screen and (max-width: 1117px) {
+  #sectionCar {
+    margin: 20px 80px;
+  }
+}
+@media screen and (max-width: 902px) {
+  .cardsProdu {
+    width: 180px;
+  }
+  .divImgProdu {
+    width: 180px;
+  }
+  .divImgProdu img {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 601px) {
+  #sectionCar {
+    margin: 20px 60px;
+  }
+  .titleCars {
+    font-size: 1em;
+  }
+  .nomeProductCar {
+    font-size: 1em;
+  }
+  .divBtnsCar {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgsCar {
+    width: 70px;
+  }
+  .titleMaisProdutos {
+    display: none;
+  }
+  #sectionProducts {
+    display: none;
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
