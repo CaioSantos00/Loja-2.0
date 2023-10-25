@@ -1,0 +1,145 @@
+#sectionCar {
+    margin: 20px 280px;
+}
+
+#divGridInfosCar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#divProdCar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.titleCars {
+    font-size: 1.5em;
+}
+
+.cardsCar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.infosProductCar{
+    display: flex;
+    align-items: center;
+}
+
+.imgsCar {
+    width: 100px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.nomeProductCar {
+    font-size: 1.3em;
+}
+
+#divFinalizaCompra {  
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#divInfosFinaisPreco{ 
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $corSecundaria;
+}
+
+#btnContinuar {
+    width: 50%;
+    @include buttons(1em, $corSecundaria, $corPrimaria);
+    &:hover {
+        background-color: $corSecundaria;
+    }
+}
+
+#btnCancelarCompra {
+    width: 50%;
+    @include buttons(1em, $btnsCancel, $corSecundaria);
+    &:hover {
+        background-color: rgb(255, 100, 100);
+    }
+}
+
+
+.holdInfosImgs {
+    display: flex;  
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.divBtnsCar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btnExcluCar {
+    @include buttons(1em, $btnsCancel, $corSecundaria);
+    padding: 6px;
+    &:hover {
+        background-color: rgb(253, 64, 64);
+    }
+}
+
+.qtdMaisMenosCar {
+    display: flex;
+    align-items: center;
+    border: 2px solid  $corSecundaria;
+    border-radius: 5px;
+}
+
+.qtdValueCar {
+    margin: 0px 5px;
+}
+
+.btnsQtdsCar {
+    background-color: $corSecundaria;
+    border: none;
+    padding: 5px 5px;
+}
+
+#divHoldBtnsFim {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#divVejaMais {
+    margin: 20px 0px;
+}
+
+.titleMaisProdutos {
+    font-size: 1.4em;
+}
+
+#sectionProducts {
+    display: flex;
+}
+
+.cardsProdu {
+    width: 250px;
+}
+
+
+.divImgProdu {
+    margin: auto;
+    width: 250px;
+    img {
+        width: 250px;
+        border-radius: 5px;
+    }
+}

@@ -279,6 +279,173 @@
     font-size: 1em;
   }
 }
+#sectionCar {
+  margin: 20px 280px;
+}
+
+#divGridInfosCar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#divProdCar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleCars {
+  font-size: 1.5em;
+}
+
+.cardsCar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.infosProductCar {
+  display: flex;
+  align-items: center;
+}
+
+.imgsCar {
+  width: 100px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.nomeProductCar {
+  font-size: 1.3em;
+}
+
+#divFinalizaCompra {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#divInfosFinaisPreco {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+#btnContinuar {
+  width: 50%;
+  font-size: 1em;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+}
+#btnContinuar:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+#btnCancelarCompra {
+  width: 50%;
+  font-size: 1em;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+}
+#btnCancelarCompra:hover {
+  background-color: rgb(255, 100, 100);
+}
+
+.holdInfosImgs {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+}
+
+.divBtnsCar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btnExcluCar {
+  font-size: 1em;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  padding: 6px;
+}
+.btnExcluCar:hover {
+  background-color: rgb(253, 64, 64);
+}
+
+.qtdMaisMenosCar {
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.qtdValueCar {
+  margin: 0px 5px;
+}
+
+.btnsQtdsCar {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 5px 5px;
+}
+
+#divHoldBtnsFim {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#divVejaMais {
+  margin: 20px 0px;
+}
+
+.titleMaisProdutos {
+  font-size: 1.4em;
+}
+
+#sectionProducts {
+  display: flex;
+}
+
+.cardsProdu {
+  width: 250px;
+}
+
+.divImgProdu {
+  margin: auto;
+  width: 250px;
+}
+.divImgProdu img {
+  width: 250px;
+  border-radius: 5px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
