@@ -126,7 +126,7 @@
     font-size: 1.4em;
 }
 
-#sectionProducts {
+/*#sectionProducts {
     display: flex;
     justify-content: center;
 }
@@ -141,7 +141,7 @@
     img {
         width: 250px;
     }
-}
+}*/
 
 @media screen and (max-width:1300px) {
     #sectionCar {
@@ -163,21 +163,6 @@
     }
 }
 
-
-@media screen and (max-width: 902px) {
-    
-.cardsProdu {
-    width: 180px;
-}
-
-.divImgProdu {
-    width: 180px;
-    img {
-        width: 180px;
-    }
-}
-}
-
 @media screen and (max-width: 601px) {
     #sectionCar {
         margin: 20px 60px;
@@ -196,9 +181,6 @@
         width: 70px;
     }
     .titleMaisProdutos {
-        display: none;
-    }
-    #sectionProducts {
         display: none;
     }
 }
