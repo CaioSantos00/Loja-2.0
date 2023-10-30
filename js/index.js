@@ -1,4 +1,10 @@
 //<li class="li" id="logouOuNao"><a href="entre.php">Entre</a></li>
+
+// Animação scroll ,
+window.sr - ScrollReveal({reset: true})
+ScrollReveal().reveal('.cardsProdu', {delay: 400});
+
+
 let coo = document.cookie;
 let temOuNaoElemento = !!document.getElementById("logouOuNao");	
 let ulMenu = document.getElementById("ulMenu");
@@ -75,20 +81,3 @@ if(coo != ""){
 		ulMenu.append(elemento);
 	}	
 }
-
-let addMenu = document.getElementById('addMenu')
-let removeMenu = document.getElementById('removeMenu')
-let nav = document.querySelector('nav')
-addMenu.addEventListener('click', ()=> {
-	nav.classList.add('navMenu')
-	console.log(nav)
-})
-
-removeMenu.addEventListener('click', ()=> {
-	nav.classList.remove('navMenu')
-})
-
-
-// Animação scroll ,
-window.sr - ScrollReveal({reset: true})
-ScrollReveal().reveal('.cardsProdu', {delay: 400});
