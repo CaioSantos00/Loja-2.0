@@ -1,5 +1,5 @@
 async function loadHeader() {
-    const resposta = await fetch('https://myndofgangster-chi.vercel.app/components/header.html')
+    const resposta = await fetch('http://localhost/Sites/Repositorios/Loja-2.0/components/header.html')
     const headerText = await resposta.text()
     const headerContainer = document.querySelector('.header');
     console.log(headerText)

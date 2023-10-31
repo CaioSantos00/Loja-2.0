@@ -57,7 +57,7 @@
 }
 
 #btnContinuar {
-    width: 50%;
+    width: 100%;
     @include buttons(1em, $corSecundaria, $corPrimaria);
     &:hover {
         background-color: $corSecundaria;
@@ -65,8 +65,7 @@
 }
 
 #btnCancelarCompra {
-    width: 50%;
-    @include buttons(1em, $btnsCancel, $corSecundaria);
+    @include buttons(1em, $btnsCancel, $corPrimaria);
     &:hover {
         background-color: rgb(255, 100, 100);
     }
@@ -88,7 +87,7 @@
 }
 
 .btnExcluCar {
-    @include buttons(1em, $btnsCancel, $corSecundaria);
+    @include buttons(1em, $btnsCancel, $corPrimaria);
     padding: 6px;
     &:hover {
         background-color: rgb(253, 64, 64);
@@ -114,6 +113,7 @@
 
 #divHoldBtnsFim {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-top: 10px;
 }

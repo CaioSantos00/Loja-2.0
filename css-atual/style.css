@@ -91,7 +91,7 @@
   padding: 10px;
   border: 1px solid rgb(109, 109, 109);
   border-radius: 5px;
-  background: rgba(129, 127, 127, 0.35);
+  background: rgba(71, 71, 71, 0.35);
   backdrop-filter: blur(13.5px);
   color: rgb(255, 255, 255);
 }
@@ -119,9 +119,11 @@
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(255, 255, 255);
   padding: 5px;
   text-transform: uppercase;
+  width: 100%;
   font-weight: bold;
 }
 #btnsForms:hover {
@@ -195,6 +197,7 @@
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 5px 10px;
   border: 1px solid rgb(255, 255, 255);
   text-transform: uppercase;
@@ -231,6 +234,7 @@
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(255, 255, 255);
 }
 #btnSaco:hover {
@@ -338,7 +342,7 @@
 }
 
 #btnContinuar {
-  width: 50%;
+  width: 100%;
   font-size: 1em;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -348,22 +352,23 @@
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #btnContinuar:hover {
   background-color: rgb(0, 0, 0);
 }
 
 #btnCancelarCompra {
-  width: 50%;
   font-size: 1em;
   background-color: red;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #btnCancelarCompra:hover {
   background-color: rgb(255, 100, 100);
@@ -385,13 +390,14 @@
 .btnExcluCar {
   font-size: 1em;
   background-color: red;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 6px;
 }
 .btnExcluCar:hover {
@@ -417,6 +423,7 @@
 
 #divHoldBtnsFim {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   margin-top: 10px;
 }
@@ -508,6 +515,145 @@
     padding: 3px 3px;
   }
 }
+#infosFinaisEndereco {
+  background: rgba(71, 71, 71, 0.35);
+  backdrop-filter: blur(13.5px);
+  box-shadow: 0px 0px 10px 0.5px rgb(109, 109, 109);
+  border-radius: 5px;
+  padding: 20px 20px 5px;
+  margin-bottom: 25px;
+}
+
+.holdInfosEnd {
+  display: flex;
+  gap: 10px;
+}
+
+#infosEnd {
+  margin: 10px;
+}
+
+#enderecoCompleto {
+  display: flex;
+  gap: 3px;
+}
+
+#divTitleEdit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#newEnde {
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+  width: 100%;
+  margin-bottom: 10px;
+}
+#newEnde:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+#divProductsFinais {
+  background: rgba(71, 71, 71, 0.35);
+  backdrop-filter: blur(13.5px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 0.5px rgb(109, 109, 109);
+  border-radius: 5px;
+  padding: 20px 20px 5px;
+  margin: 20px 0px;
+}
+
+#divProdCar {
+  margin: 10px 0px;
+}
+
+#precoTotalFim {
+  color: rgb(255, 255, 255);
+}
+
+#divInformacoesFinais {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#btnFim {
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+}
+#btnFim:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+#aEdit {
+  color: rgb(255, 255, 255);
+}
+
+#divInfoEndereco {
+  box-shadow: 0px 0px 10px 2px rgb(109, 109, 109);
+  background: rgba(71, 71, 71, 0.35);
+  backdrop-filter: blur(13.5px);
+  border-radius: 5px;
+  padding: 20px 20px 5px;
+}
+
+.titleEndereco {
+  font-size: 1.5em;
+}
+
+#formCadasterEndereco {
+  margin: 20px 0px;
+}
+
+.holdInputsInfos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.inputsEndereco {
+  margin: 5px 0px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 1em;
+  padding: 3px;
+}
+
+.numberInput {
+  width: 80px;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 1em;
+  padding: 3px;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -518,6 +664,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;*/
   color: rgb(255, 255, 255);
+}
+
+main {
   min-height: 100vh;
 }
 
