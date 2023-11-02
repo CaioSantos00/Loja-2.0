@@ -726,6 +726,11 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 740px) {
+  #divFerramentas {
+    grid-template-areas: "cardsFerramentas";
+  }
+}
 body {
   margin: 0px;
   padding: 0px;
