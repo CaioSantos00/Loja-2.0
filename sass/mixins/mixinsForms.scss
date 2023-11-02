@@ -1,0 +1,6 @@
+@mixin fundoForms() {
+    background: $corFormsUser;
+    //backdrop-filter: blur( 13.5px );
+    //border: 1px solid $corBordasFormsUser;
+    border-radius: 5px;
+}

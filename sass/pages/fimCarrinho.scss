@@ -1,8 +1,5 @@
 #infosFinaisEndereco {
-    background: $corFormsUser;
-    backdrop-filter: blur( 13.5px );
-    box-shadow: 0px 0px 10px 0.5px $corBordasFormsUser;
-    border-radius: 5px;
+    @include fundoForms();
     padding: 20px 20px 5px;
     margin-bottom: 25px;
 }
@@ -28,7 +25,7 @@
 }
 
 #newEnde {
-    @include buttons(1em, $corPrimaria, $corSecundaria);
+    @include buttons(1em, transparent, $corPrimaria);
     border: 1px solid $corPrimaria;
     width: 100%;
     margin-bottom: 10px;
@@ -43,7 +40,6 @@
     backdrop-filter: blur( 13.5px );
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px 0.5px $corBordasFormsUser;
     border-radius: 5px;
     padding: 20px 20px 5px;
     margin: 20px 0px;
@@ -66,9 +62,9 @@
 }
 
 #btnFim {
-    @include buttons(1em, $corPrimaria, $corSecundaria);
-    padding: 5px;
+    @include buttons(1em, transparent, $corPrimaria);
     border: 1px solid $corPrimaria;
+    padding: 5px;
     &:hover {
         background-color: transparent;
         color: $corPrimaria;
@@ -78,3 +74,13 @@
 #aEdit {
     color: $corPrimaria;
 }
+
+@media screen and (max-width: 400px){   
+    #btnFim {
+        font-size: 1em;
+        padding: 4px;
+    }
+    #divInformacoesFinais {
+        font-size: 1em;
+    }
+    }

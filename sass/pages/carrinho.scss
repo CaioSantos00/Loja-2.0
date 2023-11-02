@@ -22,12 +22,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*border: 1px solid $corBordasFormsUser;
-    border-radius: 5px; 
-    background: $corFormsUser;
-    backdrop-filter: blur( 13.5px );*/
+    @include fundoForms();
     color: $corPrimaria;
-    border-radius: 10px;
     padding: 10px;
 }
 
@@ -47,27 +43,20 @@
 }
 
 #divFinalizaCompra {  
-    border: 1px solid $corBordasFormsUser;
-    border-radius: 5px; 
-    background: $corFormsUser;
-    backdrop-filter: blur( 13.5px );
+    @include fundoForms();
     color: $corPrimaria;
-    border-radius: 10px;
     padding: 10px;
 }
 
 #divInfosFinaisPreco{ 
     display: flex;
     justify-content: space-between;
-    //border-bottom: 2px solid $corSecundaria;
 }
 
 #btnContinuar {
     width: 100%;
-    @include buttons(1em, $corSecundaria, $corPrimaria);
-    &:hover {
-        background-color: $corSecundaria;
-    }
+    @include buttons(1em, transparent, $corPrimaria);
+    border: 1px solid $corPrimaria;
 }
 
 #btnCancelarCompra {

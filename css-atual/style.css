@@ -89,9 +89,9 @@
   gap: 5px;
   width: 250px;
   padding: 10px;
-  border: 1px solid rgb(109, 109, 109);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
-  background: rgba(71, 71, 71, 0.35);
+  background: rgba(31, 31, 31, 0.35);
   backdrop-filter: blur(13.5px);
   color: rgb(255, 255, 255);
 }
@@ -111,8 +111,8 @@
 
 #btnsForms {
   font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -127,8 +127,8 @@
   font-weight: bold;
 }
 #btnsForms:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 #possuiContaDiv {
@@ -307,12 +307,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*border: 1px solid $corBordasFormsUser;
-  border-radius: 5px; 
-  background: $corFormsUser;
-  backdrop-filter: blur( 13.5px );*/
+  background: rgba(31, 31, 31, 0.35);
+  border-radius: 5px;
   color: rgb(255, 255, 255);
-  border-radius: 10px;
   padding: 10px;
 }
 
@@ -332,12 +329,9 @@
 }
 
 #divFinalizaCompra {
-  border: 1px solid rgb(109, 109, 109);
+  background: rgba(31, 31, 31, 0.35);
   border-radius: 5px;
-  background: rgba(71, 71, 71, 0.35);
-  backdrop-filter: blur(13.5px);
   color: rgb(255, 255, 255);
-  border-radius: 10px;
   padding: 10px;
 }
 
@@ -349,7 +343,7 @@
 #btnContinuar {
   width: 100%;
   font-size: 1em;
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
   color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
@@ -358,9 +352,7 @@
   outline: 0;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
-}
-#btnContinuar:hover {
-  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 #btnCancelarCompra {
@@ -505,9 +497,7 @@
   }
 }
 #infosFinaisEndereco {
-  background: rgba(71, 71, 71, 0.35);
-  backdrop-filter: blur(13.5px);
-  box-shadow: 0px 0px 10px 0.5px rgb(109, 109, 109);
+  background: rgba(31, 31, 31, 0.35);
   border-radius: 5px;
   padding: 20px 20px 5px;
   margin-bottom: 25px;
@@ -535,8 +525,8 @@
 
 #newEnde {
   font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -554,11 +544,10 @@
 }
 
 #divProductsFinais {
-  background: rgba(71, 71, 71, 0.35);
+  background: rgba(31, 31, 31, 0.35);
   backdrop-filter: blur(13.5px);
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 10px 0.5px rgb(109, 109, 109);
   border-radius: 5px;
   padding: 20px 20px 5px;
   margin: 20px 0px;
@@ -582,8 +571,8 @@
 
 #btnFim {
   font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -591,8 +580,8 @@
   outline: 0;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
   border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
 }
 #btnFim:hover {
   background-color: transparent;
@@ -603,9 +592,17 @@
   color: rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 400px) {
+  #btnFim {
+    font-size: 1em;
+    padding: 4px;
+  }
+  #divInformacoesFinais {
+    font-size: 1em;
+  }
+}
 #divInfoEndereco {
-  box-shadow: 0px 0px 10px 2px rgb(109, 109, 109);
-  background: rgba(71, 71, 71, 0.35);
+  background: rgba(31, 31, 31, 0.35);
   backdrop-filter: blur(13.5px);
   border-radius: 5px;
   padding: 20px 20px 5px;
@@ -643,6 +640,11 @@
   padding: 3px;
 }
 
+@media screen and (max-width: 400px) {
+  .titleEndereco {
+    font-size: 1.2em;
+  }
+}
 #sectionPerfil {
   display: grid;
   justify-content: center;
@@ -693,7 +695,7 @@
   font-weight: bold;
 }
 #btnEditPerfil:hover {
-  background-color: rgb(109, 109, 109);
+  background-color: rgb(255, 255, 255);
 }
 
 #divFerramentas {

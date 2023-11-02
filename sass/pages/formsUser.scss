@@ -27,15 +27,15 @@
 }
 
 #btnsForms {
-    @include buttons(1em, $corPrimaria, $corSecundaria);
+    @include buttons(1em, transparent, $corPrimaria);
     border: 1px solid $corPrimaria;
     padding: 5px;
     text-transform: uppercase;
     width: 100%;
     font-weight: bold;
     &:hover {
-        background-color: transparent;
-        color: $corPrimaria;
+        background-color: $corPrimaria;
+        color: $corSecundaria;
     }
 }
 
