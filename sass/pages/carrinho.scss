@@ -22,8 +22,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $corPrimaria;
-    color: $corSecundaria;
+    border: 1px solid $corBordasFormsUser;
+    border-radius: 5px; 
+    background: $corFormsUser;
+    backdrop-filter: blur( 13.5px );
+    color: $corPrimaria;
     border-radius: 10px;
     padding: 10px;
 }
@@ -44,8 +47,11 @@
 }
 
 #divFinalizaCompra {  
-    background-color: $corPrimaria;
-    color: $corSecundaria;
+    border: 1px solid $corBordasFormsUser;
+    border-radius: 5px; 
+    background: $corFormsUser;
+    backdrop-filter: blur( 13.5px );
+    color: $corPrimaria;
     border-radius: 10px;
     padding: 10px;
 }
@@ -53,7 +59,7 @@
 #divInfosFinaisPreco{ 
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid $corSecundaria;
+    //border-bottom: 2px solid $corSecundaria;
 }
 
 #btnContinuar {
@@ -97,7 +103,7 @@
 .qtdMaisMenosCar {
     display: flex;
     align-items: center;
-    border: 2px solid  $corSecundaria;
+    border: 2px solid  $corPrimaria;
     border-radius: 5px;
 }
 
@@ -106,7 +112,7 @@
 }
 
 .btnsQtdsCar {
-    background-color: $corSecundaria;
+    background-color: $corPrimaria;
     border: none;
     padding: 5px 5px;
 }
@@ -125,23 +131,6 @@
 .titleMaisProdutos {
     font-size: 1.4em;
 }
-
-/*#sectionProducts {
-    display: flex;
-    justify-content: center;
-}
-
-.cardsProdu {
-    width: 250px;
-}
-
-.divImgProdu {
-    margin: auto;
-    width: 250px;
-    img {
-        width: 250px;
-    }
-}*/
 
 @media screen and (max-width:1300px) {
     #sectionCar {
