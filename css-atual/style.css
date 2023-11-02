@@ -654,6 +654,87 @@
   padding: 3px;
 }
 
+#sectionPerfil {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+}
+
+#boxInfosPerfil {
+  width: 300px;
+  margin: auto;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#infos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#imgPerfil {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+#emailPerfil {
+  font-size: 0.9em;
+}
+
+#btnEditPerfil {
+  font-size: 1em;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  font-weight: bold;
+}
+#btnEditPerfil:hover {
+  background-color: rgb(109, 109, 109);
+}
+
+#divFerramentas {
+  margin: 20px 0px;
+  display: grid;
+  grid-template-areas: "cardsFerramentas cardsFerramentas cardsFerramentas";
+  gap: 10px;
+}
+
+.cardsFerramentas {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.cardsFerramentas a {
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+  background-color: rgb(13, 13, 13);
+}
+
+.divSvg {
+  display: flex;
+  justify-content: center;
+}
+
 body {
   margin: 0px;
   padding: 0px;
