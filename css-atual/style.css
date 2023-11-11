@@ -113,7 +113,7 @@
   font-size: 1em;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -125,6 +125,10 @@
   text-transform: uppercase;
   width: 100%;
   font-weight: bold;
+}
+#btnsForms:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 #btnsForms:hover {
   background-color: rgb(255, 255, 255);
@@ -191,7 +195,7 @@
   font-size: 1em;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -201,6 +205,10 @@
   padding: 5px 10px;
   border: 1px solid rgb(255, 255, 255);
   text-transform: uppercase;
+}
+.sizeBtn:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 .sizeBtn:hover {
   background-color: rgb(255, 255, 255);
@@ -228,7 +236,7 @@
   font-size: 1em;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -236,6 +244,10 @@
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(255, 255, 255);
+}
+#btnSaco:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 #btnSaco:hover {
   background-color: transparent;
@@ -345,7 +357,7 @@
   font-size: 1em;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -354,18 +366,26 @@
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(255, 255, 255);
 }
+#btnContinuar:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
 
 #btnCancelarCompra {
   font-size: 1em;
   background-color: red;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   outline: 0;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
+}
+#btnCancelarCompra:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 #btnCancelarCompra:hover {
   background-color: rgb(255, 100, 100);
@@ -388,7 +408,7 @@
   font-size: 1em;
   background-color: red;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -396,6 +416,10 @@
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
   padding: 6px;
+}
+.btnExcluCar:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 .btnExcluCar:hover {
   background-color: rgb(253, 64, 64);
@@ -527,7 +551,7 @@
   font-size: 1em;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -537,6 +561,10 @@
   border: 1px solid rgb(255, 255, 255);
   width: 100%;
   margin-bottom: 10px;
+}
+#newEnde:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 #newEnde:hover {
   background-color: transparent;
@@ -573,7 +601,7 @@
   font-size: 1em;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -582,6 +610,10 @@
   font-family: Arial, Helvetica, sans-serif;
   border: 1px solid rgb(255, 255, 255);
   padding: 5px;
+}
+#btnFim:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 #btnFim:hover {
   background-color: transparent;
@@ -684,7 +716,7 @@
   font-size: 1em;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid rgb(255, 255, 255);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
@@ -693,6 +725,10 @@
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
   font-weight: bold;
+}
+#btnEditPerfil:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
 }
 #btnEditPerfil:hover {
   background-color: rgb(255, 255, 255);
@@ -725,6 +761,353 @@
 .divSvg {
   display: flex;
   justify-content: center;
+}
+
+.divHoldCards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardsClassificacoes {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #185dd4;
+}
+
+.cardsVariacoes {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #185dd4;
+}
+
+.holdInputs {
+  display: flex;
+  gap: 5px;
+}
+
+.inputVari {
+  border: none;
+  border-radius: 5px;
+  width: 126px;
+}
+
+.variacoesTextArea {
+  width: 97%;
+  margin: 10px 0px 0px;
+}
+
+.btnsCancel {
+  font-size: 0.9em;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+.btnsCancel:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsCancel:hover {
+  background-color: rgb(161, 16, 16);
+}
+
+.btnsConfirm {
+  font-size: 0.9em;
+  background-color: green;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
+.btnsConfirm:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsConfirm:hover {
+  background-color: rgb(16, 161, 16);
+}
+
+.divTextAreaFile {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: column;
+}
+
+#sectionDetails {
+  margin: 20px 280px;
+}
+
+.titleDetalhes {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#divAlgumasInfos {
+  display: grid;
+  grid-template-areas: "boxPrima boxSecond";
+}
+
+.borderBoxs {
+  padding: 10px;
+  border: 1px solid rgba(31, 31, 31, 0.35);
+}
+
+#detalhesCarrinho {
+  margin-top: 20px;
+}
+
+#holdInfosCar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+#finalizarPedido {
+  font-size: 1em;
+  background-color: green;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  width: 100%;
+}
+#finalizarPedido:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+#finalizarPedido:hover {
+  background-color: rgb(34, 161, 34);
+}
+
+#precoTotal {
+  box-shadow: 0px 0px 10px 2px rgba(31, 31, 31, 0.35);
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 8px;
+  font-size: 1.3em;
+}
+
+#divInputConsulPedido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 30px;
+}
+
+#pedidoInput {
+  width: 100%;
+  padding: 5px;
+  outline: 0;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+#btnBuscaPedido {
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+}
+#btnBuscaPedido:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+#holdTodosPedidos {
+  display: grid;
+  grid-template-areas: "cardPedido cardPedido cardPedido cardPedido";
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0px;
+}
+
+.cardPedido {
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.bolinhaStatusVerde {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 100%;
+  box-shadow: 0px 0px 3px 1px rgb(0, 255, 0);
+  margin-top: 4px;
+}
+
+.bolinhaStatusRed {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 100%;
+  box-shadow: 0px 0px 3px 1px red;
+  margin-top: 4px;
+}
+
+.situacaoPedido {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btnMaisDetails {
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding: 6px;
+  margin: 10px 0px 0px;
+}
+.btnMaisDetails:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1115px) {
+  #holdTodosPedidos {
+    grid-template-areas: "cardPedido cardPedido cardPedido";
+  }
+}
+@media screen and (max-width: 850px) {
+  #holdTodosPedidos {
+    grid-template-areas: "cardPedido cardPedido";
+  }
+}
+@media screen and (max-width: 570px) {
+  #holdTodosPedidos {
+    grid-template-areas: "cardPedido";
+  }
+}
+#sectionErroAdm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5%;
+}
+
+.boxInfoErro {
+  background-color: rgb(253, 179, 179);
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.inforErro {
+  color: rgb(233, 232, 232);
+  font-size: 0.9em;
+}
+
+.titleInforErro {
+  font-size: 1.1em;
+}
+
+#divInputConsul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#inputConsulta {
+  width: 100%;
+  margin: 30px;
+  padding: 5px;
+  outline: 0;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.divEditExclu {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btnsExclu {
+  width: 50%;
+  font-size: 1em;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 5px;
+}
+.btnsExclu:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsExclu:hover {
+  background-color: rgb(255, 63, 63);
+}
+
+.btnsEdit {
+  width: 50%;
+  font-size: 1em;
+  background-color: green;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  padding: 5px;
+}
+.btnsEdit:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsEdit:hover {
+  background-color: rgb(0, 175, 0);
 }
 
 @media screen and (max-width: 740px) {
