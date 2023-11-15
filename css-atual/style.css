@@ -918,11 +918,12 @@
   margin: 30px;
 }
 
-#pedidoInput {
+.inputsConsultas {
   width: 100%;
   padding: 5px;
   outline: 0;
   border: 3px solid rgb(255, 255, 255);
+  border-radius: 5px;
   border-radius: 5px;
 }
 
