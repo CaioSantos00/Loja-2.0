@@ -444,6 +444,7 @@ textarea {
   outline: 0;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
 }
 #btnCancelarCompra:hover {
   background-color: transparent;
@@ -477,6 +478,7 @@ textarea {
   outline: 0;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
   padding: 6px;
 }
 .btnExcluCar:hover {
@@ -499,9 +501,10 @@ textarea {
 }
 
 .btnsQtdsCar {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 5px 5px;
+  padding: 5px 8px;
 }
 
 #divHoldBtnsFim {

@@ -61,6 +61,7 @@
 
 #btnCancelarCompra {
     @include buttons(1em, $btnsCancel, $corPrimaria);
+    border: none;
     &:hover {
         background-color: rgb(255, 100, 100);
     }
@@ -83,6 +84,7 @@
 
 .btnExcluCar {
     @include buttons(1em, $btnsCancel, $corPrimaria);
+    border: none;
     padding: 6px;
     &:hover {
         background-color: rgb(253, 64, 64);
@@ -101,9 +103,10 @@
 }
 
 .btnsQtdsCar {
-    background-color: $corPrimaria;
+    background-color: transparent;
+    color: $corPrimaria;
     border: none;
-    padding: 5px 5px;
+    padding: 5px 8px;
 }
 
 #divHoldBtnsFim {
