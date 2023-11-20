@@ -51,36 +51,98 @@
   text-align: center;
 }
 
-@media (max-width: 1115px) {
-  #containerCard {
-    grid-template-areas: "cardsProdu cardsProdu ";
-  }
+#form {
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
 }
-@media (max-width: 664px) {
-  svg {
-    width: 25px;
-    height: 25px;
-  }
-  #containerCard {
-    grid-template-areas: "cardsProdu cardsProdu";
-    gap: 10px;
-  }
-  .cardsProdu {
-    width: 150px;
-    padding: 0px;
-  }
-  .divImgsProdu {
-    width: 150px;
-  }
-  .imgsProdu {
-    width: 150px;
-    height: 150px;
-  }
-  .containerInfosInit {
-    font-size: 0.9em;
-    text-align: center;
-  }
+
+#sectionForms {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
 }
+
+.inputs {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.inputFile {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.inputFile::file-selector-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 160px;
+}
+
+#btnsForms {
+  font-size: 1.2em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+}
+#btnsForms:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+#titleForms {
+  font-size: 1.6em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#divEsqueceBtnEntre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#divEsqueceBtnEntre a {
+  color: rgb(0, 0, 0);
+}
+
+.btnsCria {
+  font-size: 1.2em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px;
+}
+.btnsCria:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
 #boxFormsUser {
   margin: 20vh auto 40vh;
   display: flex;
@@ -1005,21 +1067,6 @@
   color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 1115px) {
-  #holdTodosPedidos {
-    grid-template-areas: "cardPedido cardPedido cardPedido";
-  }
-}
-@media screen and (max-width: 850px) {
-  #holdTodosPedidos {
-    grid-template-areas: "cardPedido cardPedido";
-  }
-}
-@media screen and (max-width: 570px) {
-  #holdTodosPedidos {
-    grid-template-areas: "cardPedido";
-  }
-}
 #sectionErroAdm {
   display: flex;
   flex-direction: column;
@@ -1047,16 +1094,8 @@
 #divInputConsul {
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-
-#inputConsulta {
-  width: 100%;
-  margin: 30px;
-  padding: 5px;
-  outline: 0;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 5px;
+  gap: 5px;
+  padding: 25px;
 }
 
 .divEditExclu {
@@ -1116,6 +1155,137 @@
     grid-template-areas: "cardsFerramentas";
   }
 }
+@media screen and (max-width: 330px) {
+  #boxInfosPerfil {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  #holdTodosPedidos {
+    grid-template-areas: "cardPedido cardPedido cardPedido";
+  }
+}
+@media screen and (max-width: 850px) {
+  #holdTodosPedidos {
+    grid-template-areas: "cardPedido cardPedido";
+  }
+}
+@media screen and (max-width: 570px) {
+  #holdTodosPedidos {
+    grid-template-areas: "cardPedido";
+  }
+}
+@media screen and (max-width: 951px) {
+  #divAlgumasInfos {
+    grid-template-areas: "boxPrima";
+  }
+  #sectionDetails {
+    margin: 20px 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #sectionDetails {
+    margin: 20px 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .nomeProductCarDetails {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1115px) {
+  #containerCard {
+    grid-template-areas: "cardsProdu cardsProdu ";
+  }
+}
+@media (max-width: 664px) {
+  /*svg {
+      width: 25px;
+      height: 25px;
+  }*/
+  #containerCard {
+    grid-template-areas: "cardsProdu cardsProdu";
+    gap: 10px;
+  }
+  .cardsProdu {
+    width: 150px;
+    padding: 0px;
+  }
+  .divImgsProdu {
+    width: 150px;
+  }
+  .imgsProdu {
+    width: 150px;
+    height: 150px;
+  }
+  .containerInfosInit {
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .bodyMensagem #mudaImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .bodyMensagem #sectionMensagens {
+    margin: 20px 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bodyMensagem #sectionMensagens {
+    margin: 20px 80px;
+  }
+}
+@media screen and (max-width: 555px) {
+  .bodyMensagem #sectionMensagens {
+    margin: 20px 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .bodyMensagem #mudaImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+  }
+  .bodyMensagem #mensagem {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bodyMensagem #sectionMensagens {
+    margin: 20px;
+  }
+  .bodyMensagem #mudaImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .bodyMensagem #sectionMensagens {
+    margin: 10px;
+  }
+  .bodyMensagem #mudaImg {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+  }
+}
+
+#sectionMensagens {
+  margin: 20px 280px;
+}
+
+#fotosMensagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   margin: 0px;
   padding: 0px;

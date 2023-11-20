@@ -6,6 +6,7 @@
 @import "./mixins/mixinsForms.scss";
 @import "./variaveis.scss";
 @import "./pages/inicio.scss";
+@import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
 @import "./pages/anuncio.scss";
 @import "./pages/carrinho.scss";
@@ -18,6 +19,11 @@
 @import "./pages/telaErrorAdm.scss";
 @import "./pages/consultaProduct.scss";
 @import "./mediaQueries/painelPerfil.scss";
+@import "./mediaQueries/telaPedidos.scss";
+@import "./mediaQueries/detailsPedido.scss";
+@import "./mediaQueries/inicio.scss";
+@import "./mediaQueries/detailsMensagens.scss";
+@import "./pages/detailsMensagens.scss";
 //Fim das importações
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
