@@ -7,9 +7,10 @@
     <title>MYX | Início</title>
     <link rel="stylesheet" href="../css-atual/style.css">
     <link rel="icon" type="image/x-icon" href="../imgs/Oficial.gif">
+    <script src="../js/previewScripts/animationAnuncio.js" defer></script>
     <script src="../js/index.js" defer></script>
     <script src="../js/Requisicoes/requisicaoHeader/header.js" defer></script>
-    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <!--<script src="https://unpkg.com/scrollreveal" defer></script>-->
 </head>
 <body>
     <header class="header">
@@ -17,7 +18,7 @@
 <main>
     <section>
         <div id="containerCard">
-           <a href="anuncio.html"><div class="cardsProdu">
+           <a class="aCard" href="anuncio.html"><div class="cardsProdu">
                 <div class="divImgsProdu">
                     <img src="../imgs/camFrenteL.png" class="imgsProdu" alt="">
                 </div>
@@ -26,7 +27,7 @@
                     <div class="precoPeca">R$0000.00</div>
                 </div>
             </div></a>
-            <a href=""><div class="cardsProdu">
+            <a class="aCard" href=""><div class="cardsProdu">
                 <div class="divImgsProdu">
                     <img src="../imgs/IMG_5135.PNG" class="imgsProdu" alt="">
                 </div>
@@ -36,7 +37,7 @@
                 </div>
             </div>
             </a>
-            <a href=""><div class="cardsProdu">
+            <a class="aCard" href=""><div class="cardsProdu">
                 <div class="divImgsProdu">
                     <img src="../imgs/IMG_5136.PNG" class="imgsProdu" alt="">
                 </div>
@@ -45,7 +46,7 @@
                     <div class="precoPeca">R$0000.00</div>
                 </div>
             </div></a>
-            <a href=""><div class="cardsProdu">
+            <a class="aCard" href=""><div class="cardsProdu">
                 <div class="divImgsProdu">
                     <img src="../imgs/IMG_5137.PNG" class="imgsProdu" alt="">
                 </div>
@@ -54,7 +55,7 @@
                     <div class="precoPeca">R$0000.00</div>
                 </div>
             </div></a>
-            <a href="anuncio.html"><div class="cardsProdu">
+            <a class="aCard" href="anuncio.html"><div class="cardsProdu">
                 <div class="divImgsProdu">
                     <img src="../imgs/IMG_5138.PNG" class="imgsProdu" alt="">
                 </div>
@@ -65,6 +66,9 @@
             </div></a>
         </div>
     </section>
+    <div id="loading">
+        <img src="../imgs/Oficial.gif" alt="Carregando..." id="logoCarregando">
+    </div>
 </main>
     <footer>
         COPYRIGHT ©

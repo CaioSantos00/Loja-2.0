@@ -1,8 +1,8 @@
 //<li class="li" id="logouOuNao"><a href="entre.php">Entre</a></li>
 
 // Animação scroll ,
-window.sr - ScrollReveal({reset: true})
-ScrollReveal().reveal('.cardsProdu', {delay: 400});
+/*window.sr - ScrollReveal({reset: true})
+ScrollReveal().reveal('.cardsProdu', {delay: 400});*/
 
 
 let coo = document.cookie;
