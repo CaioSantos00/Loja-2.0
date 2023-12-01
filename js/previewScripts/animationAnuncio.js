@@ -8,6 +8,7 @@ function carregarProximaPagina(e) {
     setTimeout(function() {
         console.log('Funciona o set')
       window.location.href = "../pages/anuncio.html";
+      logoCarregando.style.display = 'none'
     }, 3000);
   }
 
