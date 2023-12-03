@@ -4,54 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Produto</title>
-    <link rel="stylesheet" href="../css-atual/style.css" />
+    <link rel="stylesheet" href="../css-atual/style.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/Oficial.gif">
     <script src="../js/Requisicoes/requisicaoHeader/header.js" defer></script>
+    <script type="module"  src="/estaticos/js/cadasterProductCreation/classificacao.js" defer></script>
 </head>
 <body>
     <header class="header"></header>
-    <section id="sectionForms">
-      <div id="form">
-        <div id="titleForms">Cadastrar Produto</div>
-        <input
-          type="text"
-          name=""
-          placeholder="Nome do produto"
-          class="inputs"
-        />
-        <input
-          type="file"
-          name=""
-          class="inputFile inputs"
-        />
-        <textarea class="inputs"></textarea>
-        <select class="inputs">
-        </select>
-        <button id="criaClassi" class="btnsCria">Criar classificação</button>
-        <div  id="divHoldClassifi"  class="divHoldCards">
-          <!--<div class="cardsClassificacoes">
-              <input type="text" class="inputs"><button class="btnsCancel">Cancelar</button><button class="btnsConfirm">Confirmar</button>
-          </div>-->
-        </div>
-        <button id="criaVari" class="btnsCria">Criar Variação</button>
-        <div id="divHoldVari" class="divHoldCards">
-          <!--<div class="cardsVariacoes">
-            <div class="holdInputs">
-              <input type="number" min="1" class="inputVari">
-              <input type="text" class="inputVari">
-              <button class="btnsCancel">Cancelar</button>
-            </div>
-            <div class="divTextAreaFile">
-              <textarea class="inputs variacoesTextArea"></textarea>
-              <input type="file" class="inputFile inputs">
-              <button  class="btnsConfirm">Salvar</button>
-            </div>
-          </div>-->
-        </div>
+    <section id="sectionFormProduto">
+      <a href="painelPerfilAdm.html" id="volteInicio">Início</a>
+        <div id="formProduto">
+          <div id="titleForms">Cadastrar Produto</div>
+          <input
+            type="text"
+            name="produto"
+            placeholder="Nome do Produto"
+            class="inputs"
+          />
+          <input
+            type="text"
+            name="preco"
+            placeholder="Preço do Produto"
+            class="inputs"
+          />
+          <div id="divHoldSelect">
+            <label for="classificacao">Selecionar Classificação:</label>
+            <select name="classificacao" id="selectClassi" class="inputs">
+  
+            </select>
+            <a href="/admin/cadastrarClassificacao" id="newClass">Clique aqui para criar uma classificação</a>
+          </div>
 
-<div id="divEsqueceBtnEntre">
-    <input type="submit" id="btnsForms" value="Cadastrar" />
+          <input
+            type="file"
+            name=""
+            placeholder="Digite "
+            class="inputFile inputs"
+          />
+          <textarea class="inputs"></textarea>
+  <div id="divEsqueceBtnEntre">
+      <input type="submit" id="btnsForms" value="Cadastrar" />
+  </div>
 </div>
-</div>
-    </section>
+      </section>
 </body>
 </html>
