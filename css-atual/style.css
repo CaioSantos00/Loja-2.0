@@ -23,6 +23,267 @@
   color: rgb(255, 255, 255);
 }
 
+.btnsBorders {
+  width: 100%;
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btnsBorders:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsBorders:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+
+.btnsBordersBottomLess {
+  font-size: 1em;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+}
+.btnsBordersBottomLess:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsBordersBottomLess:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.btnDireEsquer {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.btnsCancel {
+  font-size: 0.9em;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border: none;
+}
+.btnsCancel:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsCancel:hover {
+  background-color: red;
+}
+
+.btnsConfirm {
+  font-size: 0.9em;
+  background-color: green;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+  border: none;
+}
+.btnsConfirm:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnsConfirm:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+/*#btnsForms {
+    @include buttons(1.2em, $corPrimaria, $corSecundaria);
+    padding: 3px;
+
+}*/
+.title {
+  font-size: 1.6em;
+}
+
+.titleForms {
+  font-size: 1.6em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.inputFile {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.inputFile::file-selector-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 160px;
+}
+
+.inputs {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+}
+
+#sectionForms {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0px;
+}
+
+#forms {
+  width: 350px;
+  padding: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
+  text-align: center;
+}
+#forms a {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 395px) {
+  #forms {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 330px) {
+  #forms {
+    width: 280px;
+  }
+}
+#caixaAnuncio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 1000px;
+  margin: auto;
+}
+
+#holdAddSacoDescri {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#fotosAnuncio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#infoAnuncio {
+  width: 500px;
+}
+
+.imgsAnuncio {
+  width: 450px;
+  height: 450px;
+}
+
+.riscoQuebra {
+  margin: 2% 0%;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+#divSize {
+  margin: 1% 0%;
+}
+#divSize button {
+  padding: 5px 10px;
+}
+
+#divBoxDescri {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#description {
+  display: none;
+  margin: 1% 0%;
+}
+
+@media screen and (max-width: 1115px) {
+  #caixaAnuncio {
+    flex-wrap: wrap;
+    width: 700px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #caixaAnuncio {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 560px) {
+  #caixaAnuncio {
+    width: 300px;
+    gap: 30px;
+  }
+  #fotosAnuncio {
+    width: 300px;
+  }
+  .imgsAnuncio {
+    width: 250px;
+    height: 250px;
+  }
+  .btnDireEsquer {
+    width: 23px;
+    height: 23px;
+  }
+  .titleAnun {
+    font-size: 1.3em;
+  }
+  #description {
+    font-size: 1em;
+  }
+}
 #containerCard {
   display: grid;
   justify-content: center;
@@ -70,1269 +331,26 @@
   width: 250px;
 }
 
-#form {
-  width: 350px;
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgb(0, 0, 0);
-  gap: 10px;
-}
-
-#sectionForms {
-  display: flex;
-  justify-content: center;
-  margin: 10%;
-}
-
-.inputs {
-  border-radius: 5px;
-  padding: 5px;
-  border: none;
-}
-
-.inputFile {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.inputFile::file-selector-button {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-textarea {
-  resize: none;
-  height: 160px;
-}
-
-#btnsForms {
-  font-size: 1.2em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 3px;
-}
-#btnsForms:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#titleForms {
-  font-size: 1.6em;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
-
-#divEsqueceBtnEntre {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-#divEsqueceBtnEntre a {
-  color: rgb(0, 0, 0);
-}
-
-.btnsCria {
-  font-size: 1.2em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 3px;
-}
-.btnsCria:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#boxFormsUser {
-  margin: 20vh auto 40vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-  width: 250px;
-  padding: 10px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  background: rgba(31, 31, 31, 0.35);
-  backdrop-filter: blur(13.5px);
-  color: rgb(255, 255, 255);
-}
-
-.titleForms {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.inputs {
-  border-radius: 5px;
-  border: none;
-  padding: 5px;
-}
-
-#btnsForms {
-  font-size: 1em;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-  text-transform: uppercase;
-  width: 100%;
-  font-weight: bold;
-}
-#btnsForms:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#btnsForms:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-#possuiContaDiv {
-  font-size: 0.9em;
-  text-align: center;
-}
-#possuiContaDiv a {
-  color: rgb(255, 255, 255);
-}
-
-#caixaAnuncio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 1000px;
-  margin: auto;
-}
-
-#fotosAnuncio {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#infoAnuncio {
-  width: 500px;
-}
-
-.btnDireEsquer {
-  display: flex;
-  align-items: center;
-  border: 1px solid white;
-  background-color: transparent;
-  width: 30px;
-  height: 30px;
-}
-
-.imgsAnuncio {
-  width: 450px;
-  height: 450px;
-}
-
-.titleAnun {
-  font-size: 1.6em;
-}
-
-.riscoQuebra {
-  margin: 2% 0%;
-  width: 100%;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
-}
-
-#divSize {
-  margin: 1% 0%;
-}
-
-.sizeBtn {
-  font-size: 1em;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 10px;
-  border: 1px solid rgb(255, 255, 255);
-  text-transform: uppercase;
-}
-.sizeBtn:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.sizeBtn:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-#divBoxDescri {
-  text-align: center;
-  padding: 5px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-#description {
-  display: none;
-  margin: 1% 0%;
-}
-
-#btnSaco {
-  margin: 10px 0px;
-  width: 100%;
-  font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-}
-#btnSaco:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#btnSaco:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-.titleSaco {
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 1115px) {
-  #caixaAnuncio {
-    flex-wrap: wrap;
-    width: 700px;
-  }
-}
-@media screen and (max-width: 720px) {
-  #caixaAnuncio {
-    width: 500px;
-  }
-}
-@media screen and (max-width: 560px) {
-  #caixaAnuncio {
-    width: 300px;
-    gap: 30px;
-  }
-  #fotosAnuncio {
-    width: 300px;
-  }
-  .imgsAnuncio {
-    width: 250px;
-    height: 250px;
-  }
-  .btnDireEsquer {
-    width: 23px;
-    height: 23px;
-  }
-  .titleAnun {
-    font-size: 1.3em;
-  }
-  #description {
-    font-size: 1em;
-  }
-}
-#sectionCar {
-  margin: 20px 280px;
-}
-
-#divGridInfosCar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#divProdCar {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.titleCars {
-  font-size: 1.5em;
-}
-
-.cardsCar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(31, 31, 31, 0.35);
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-}
-
-.infosProductCar {
-  display: flex;
-  align-items: center;
-}
-
-.imgsCar {
-  width: 100px;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-
-.nomeProductCar {
-  font-size: 1.3em;
-}
-
-#divFinalizaCompra {
-  background: rgba(31, 31, 31, 0.35);
-  border-radius: 5px;
-  color: rgb(255, 255, 255);
-  padding: 10px;
-}
-
-#divInfosFinaisPreco {
-  display: flex;
-  justify-content: space-between;
-}
-
-#btnContinuar {
-  width: 100%;
-  font-size: 1em;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-}
-#btnContinuar:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#btnCancelarCompra {
-  font-size: 1em;
-  background-color: red;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
-}
-#btnCancelarCompra:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#btnCancelarCompra:hover {
-  background-color: rgb(255, 100, 100);
-}
-
-.holdInfosImgs {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  align-items: center;
-}
-
-.divBtnsCar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.btnExcluCar {
-  font-size: 1em;
-  background-color: red;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
-  padding: 6px;
-}
-.btnExcluCar:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnExcluCar:hover {
-  background-color: rgb(253, 64, 64);
-}
-
-.qtdMaisMenosCar {
-  display: flex;
-  align-items: center;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 5px;
-}
-
-.qtdValueCar {
-  margin: 0px 5px;
-}
-
-.btnsQtdsCar {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: none;
-  padding: 5px 8px;
-}
-
-#divHoldBtnsFim {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-#divVejaMais {
-  margin: 20px 0px;
-}
-
-.titleMaisProdutos {
-  font-size: 1.4em;
-}
-
-@media screen and (max-width: 1300px) {
-  #sectionCar {
-    margin: 20px 200px;
-  }
-}
-@media screen and (max-width: 1117px) {
-  #sectionCar {
-    margin: 20px 150px;
-  }
-}
-@media screen and (max-width: 1117px) {
-  #sectionCar {
-    margin: 20px 80px;
-  }
-}
-@media screen and (max-width: 601px) {
-  #sectionCar {
-    margin: 20px 60px;
-  }
-  .titleCars {
-    font-size: 1em;
-  }
-  .nomeProductCar {
-    font-size: 1em;
-  }
-  .divBtnsCar {
-    display: flex;
-    flex-direction: column;
-  }
-  .imgsCar {
-    width: 70px;
-  }
-  .titleMaisProdutos {
-    display: none;
-  }
-}
-@media screen and (max-width: 420px) {
-  #sectionCar {
-    margin: 20px 20px;
-  }
-  .titleCars {
-    font-size: 0.9em;
-  }
-  .nomeProductCar {
-    font-size: 0.9em;
-  }
-  .precoCar {
-    font-size: 0.9em;
-  }
-  .btnExcluCar {
-    font-size: 0.9em;
-    padding: 4px;
-  }
-  .btnExcluCar:hover {
-    background-color: rgb(253, 64, 64);
-  }
-  .qtdValueCar {
-    margin: 0px 3px;
-  }
-  .btnsQtdsCar {
-    padding: 3px 3px;
-  }
-}
-#infosFinaisEndereco {
-  background: rgba(31, 31, 31, 0.35);
-  border-radius: 5px;
-  padding: 20px 20px 5px;
-  margin-bottom: 25px;
-}
-
-.holdInfosEnd {
-  display: flex;
-  gap: 10px;
-}
-
-#infosEnd {
-  margin: 10px;
-}
-
-#enderecoCompleto {
-  display: flex;
-  gap: 3px;
-}
-
-#divTitleEdit {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#newEnde {
-  font-size: 1em;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-  width: 100%;
-  margin-bottom: 10px;
-}
-#newEnde:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#newEnde:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#divProductsFinais {
-  background: rgba(31, 31, 31, 0.35);
-  backdrop-filter: blur(13.5px);
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  padding: 20px 20px 5px;
-  margin: 20px 0px;
-}
-
-#divProdCar {
-  margin: 10px 0px;
-}
-
-#precoTotalFim {
-  color: rgb(255, 255, 255);
-}
-
-#divInformacoesFinais {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.2em;
-}
-
-#btnFim {
-  font-size: 1em;
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid rgb(255, 255, 255);
-  padding: 5px;
-}
-#btnFim:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#btnFim:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#aEdit {
-  color: rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 400px) {
-  #btnFim {
-    font-size: 1em;
-    padding: 4px;
-  }
-  #divInformacoesFinais {
-    font-size: 1em;
-  }
-}
-#divInfoEndereco {
-  background: rgba(31, 31, 31, 0.35);
-  backdrop-filter: blur(13.5px);
-  border-radius: 5px;
-  padding: 20px 20px 5px;
-}
-
-.titleEndereco {
-  font-size: 1.5em;
-}
-
-#formCadasterEndereco {
-  margin: 20px 0px;
-}
-
-.holdInputsInfos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.inputsEndereco {
-  margin: 5px 0px;
-  width: 100%;
-  border-radius: 5px;
-  border: 2px solid rgb(255, 255, 255);
-  font-size: 1em;
-  padding: 3px;
-}
-
-.numberInput {
-  width: 80px;
-  border-radius: 5px;
-  border: 2px solid rgb(255, 255, 255);
-  font-size: 1em;
-  padding: 3px;
-}
-
-@media screen and (max-width: 400px) {
-  .titleEndereco {
-    font-size: 1.2em;
-  }
-}
-#sectionPerfil {
-  display: grid;
-  justify-content: center;
-  margin: 20px;
-}
-
-#boxInfosPerfil {
-  width: 300px;
-  margin: auto;
-  padding: 4px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 5px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-#infos {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-#imgPerfil {
-  width: 35px;
-  height: 35px;
-  border-radius: 100%;
-  background-color: rgb(0, 0, 0);
-}
-
-#emailPerfil {
-  font-size: 0.9em;
-}
-
-#btnEditPerfil {
-  font-size: 1em;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  font-weight: bold;
-}
-#btnEditPerfil:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#btnEditPerfil:hover {
-  background-color: rgb(255, 255, 255);
-}
-
-#divFerramentas {
-  margin: 20px 0px;
-  display: grid;
-  justify-content: center;
-  grid-template-areas: "cardsFerramentas cardsFerramentas cardsFerramentas";
-  gap: 10px;
-}
-
-.cardsFerramentas {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: rgb(0, 0, 0);
-  padding: 10px;
-  text-align: center;
-  border-radius: 10px;
-}
-.cardsFerramentas a {
-  color: rgb(255, 255, 255);
-  margin-top: 5px;
-  background-color: rgb(13, 13, 13);
-}
-
-.divSvg {
-  display: flex;
-  justify-content: center;
-}
-
-#formProduto {
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin: 8px;
-  padding: 8px;
-  border-radius: 8px;
-}
-
-#divHoldSelect {
-  display: flex;
-  flex-direction: column;
-}
-
-#newClass {
-  color: rgb(0, 0, 0);
-}
-
-#divHoldClassifi {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.cardsClassificacoes {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.btnsCancel {
-  font-size: 0.9em;
-  background-color: red;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsCancel:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsCancel:hover {
-  background-color: red;
-}
-
-.btnsConfirm {
-  font-size: 0.9em;
-  background-color: green;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsConfirm:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsConfirm:hover {
-  background-color: rgb(0, 255, 0);
-}
-
-#sectionDetails {
-  margin: 20px 280px;
-}
-
-.titleDetalhes {
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-#divAlgumasInfos {
-  display: grid;
-  grid-template-areas: "boxPrima boxSecond";
-}
-
-.borderBoxs {
-  padding: 10px;
-  border: 1px solid rgba(31, 31, 31, 0.35);
-}
-
-#detalhesCarrinho {
-  margin-top: 20px;
-}
-
-#holdInfosCar {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 10px 0px;
-}
-
-#finalizarPedido {
-  font-size: 1em;
-  background-color: green;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  border: none;
-  width: 100%;
-}
-#finalizarPedido:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-#finalizarPedido:hover {
-  background-color: rgb(34, 161, 34);
-}
-
-#precoTotal {
-  box-shadow: 0px 0px 10px 2px rgba(31, 31, 31, 0.35);
-  border-radius: 5px;
-  margin: 10px 0px;
-  padding: 8px;
-  font-size: 1.3em;
-}
-
-#divInputConsulPedido {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin: 30px;
-}
-
-.inputsConsultas {
-  width: 100%;
-  padding: 5px;
-  outline: 0;
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 5px;
-  border-radius: 5px;
-}
-
-#btnBuscaPedido {
-  font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 6px;
-}
-#btnBuscaPedido:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#holdTodosPedidos {
-  display: grid;
-  grid-template-areas: "cardPedido cardPedido cardPedido cardPedido";
-  justify-content: center;
-  gap: 10px;
-  margin: 30px 0px;
-}
-
-.cardPedido {
-  width: 250px;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.bolinhaStatusVerde {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(0, 255, 0);
-  border-radius: 100%;
-  box-shadow: 0px 0px 3px 1px rgb(0, 255, 0);
-  margin-top: 4px;
-}
-
-.bolinhaStatusRed {
-  width: 10px;
-  height: 10px;
-  background-color: red;
-  border-radius: 100%;
-  box-shadow: 0px 0px 3px 1px red;
-  margin-top: 4px;
-}
-
-.situacaoPedido {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.btnMaisDetails {
-  font-size: 1em;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  padding: 6px;
-  margin: 10px 0px 0px;
-}
-.btnMaisDetails:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-
-#sectionErroAdm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 5%;
-}
-
-.boxInfoErro {
-  background-color: rgb(253, 179, 179);
-  border: 1px solid red;
-  padding: 10px;
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-}
-
-.inforErro {
-  color: rgb(233, 232, 232);
-  font-size: 0.9em;
-}
-
-.titleInforErro {
-  font-size: 1.1em;
-}
-
-#divInputConsul {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  padding: 25px;
-}
-
-.divEditExclu {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.btnsExclu {
-  width: 40%;
-  font-size: 1em;
-  background-color: red;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsExclu:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsExclu:hover {
-  background-color: rgb(255, 63, 63);
-}
-
-.btnsEdit {
-  width: 40%;
-  font-size: 1em;
-  background-color: green;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsEdit:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsEdit:hover {
-  background-color: rgb(0, 175, 0);
-}
-
-#divHoldVari {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.cardsVariacoes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  background-color: rgba(90, 90, 90, 0.35);
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.inputFileVari {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-.inputFileVari::file-selector-button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-.holdInputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.inputVari {
-  border: none;
-  padding: 5px;
-  margin: 3px 0px;
-  border-radius: 5px;
-}
-
-.divTextAreaFile {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.cardsClass {
-  background-color: rgba(90, 90, 90, 0.35);
-  width: 270px;
-  color: rgb(255, 255, 255);
-  padding: 8px;
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
-  border-radius: 5px;
-}
-
-.inputClass {
-  width: 120px;
-  border: none;
-  border-radius: 3px;
-  padding: 3px;
-}
-
-.btnsExcluClass {
-  font-size: 1em;
-  background-color: red;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsExcluClass:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsExcluClass:hover {
-  background-color: rgb(255, 63, 63);
-}
-
-.btnsEditClass {
-  font-size: 1em;
-  background-color: green;
-  color: rgb(0, 0, 0);
-  border: 1px solid rgb(255, 255, 255);
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  outline: 0;
-  transition: 0.5s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px;
-  border: none;
-}
-.btnsEditClass:hover {
-  background-color: transparent;
-  color: rgb(255, 255, 255);
-}
-.btnsEditClass:hover {
-  background-color: rgb(0, 175, 0);
-}
-
-.cardsVaris {
-  background-color: rgba(90, 90, 90, 0.35);
-  width: 270px;
-  color: rgb(0, 0, 0);
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  border-radius: 5px;
-}
-
-.nomeVar {
-  text-align: center;
-}
-
-@media screen and (max-width: 740px) {
-  #divFerramentas {
-    grid-template-areas: "cardsFerramentas";
-  }
-}
-@media screen and (max-width: 330px) {
-  #boxInfosPerfil {
-    width: 280px;
-  }
-}
-@media screen and (max-width: 1115px) {
-  #holdTodosPedidos {
-    grid-template-areas: "cardPedido cardPedido cardPedido";
-  }
-}
-@media screen and (max-width: 850px) {
-  #holdTodosPedidos {
-    grid-template-areas: "cardPedido cardPedido";
-  }
-}
-@media screen and (max-width: 570px) {
-  #holdTodosPedidos {
-    grid-template-areas: "cardPedido";
-  }
-}
-@media screen and (max-width: 951px) {
-  #divAlgumasInfos {
-    grid-template-areas: "boxPrima";
-  }
-  #sectionDetails {
-    margin: 20px 100px;
-  }
-}
-@media screen and (max-width: 500px) {
-  #sectionDetails {
-    margin: 20px 20px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .nomeProductCarDetails {
-    font-size: 1em;
-  }
-}
+/*
+@import "./pages/forms.scss";
+@import "./pages/formsUser.scss";
+@import "./pages/carrinho.scss";
+@import "./pages/fimCarrinho.scss";
+@import "./pages/editarEndereco.scss";
+@import "./pages/perfilAdm.scss";
+@import "./pages/cadasterProduct.scss";
+@import "./pages/detailsPedido.scss";
+@import "./pages/telaPedidos.scss";
+@import "./pages/telaErrorAdm.scss";
+@import "./pages/consultaProduct.scss";
+@import "./pages/cadasterVariation.scss";
+@import "./pages/consultaClass.scss";
+@import "./pages/consultaVaris.scss";
+@import "./mediaQueries/painelPerfil.scss";
+@import "./mediaQueries/telaPedidos.scss";
+@import "./mediaQueries/detailsPedido.scss";
+@import "./mediaQueries/detailsMensagens.scss";
+@import "./pages/detailsMensagens.scss";*/
 @media (max-width: 1115px) {
   #containerCard {
     grid-template-areas: "cardsProdu cardsProdu ";
@@ -1363,69 +381,6 @@ textarea {
     text-align: center;
   }
 }
-@media screen and (max-width: 1115px) {
-  .bodyMensagem #mudaImg {
-    width: 300px;
-    height: 300px;
-    border-radius: 8px;
-  }
-}
-@media screen and (max-width: 950px) {
-  .bodyMensagem #sectionMensagens {
-    margin: 20px 150px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .bodyMensagem #sectionMensagens {
-    margin: 20px 80px;
-  }
-}
-@media screen and (max-width: 555px) {
-  .bodyMensagem #sectionMensagens {
-    margin: 20px 50px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .bodyMensagem #mudaImg {
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-  }
-  .bodyMensagem #mensagem {
-    font-size: 0.9em;
-  }
-}
-@media screen and (max-width: 400px) {
-  .bodyMensagem #sectionMensagens {
-    margin: 20px;
-  }
-  .bodyMensagem #mudaImg {
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-  }
-}
-@media screen and (max-width: 330px) {
-  .bodyMensagem #sectionMensagens {
-    margin: 10px;
-  }
-  .bodyMensagem #mudaImg {
-    width: 180px;
-    height: 180px;
-    border-radius: 8px;
-  }
-}
-
-#sectionMensagens {
-  margin: 20px 280px;
-}
-
-#fotosMensagem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   margin: 0px;
   padding: 0px;
@@ -1468,7 +423,8 @@ header {
 }
 
 nav {
-  display: none;
+  transform: translateY(-100%);
+  transition: transform 1s;
 }
 
 .navMenu {
