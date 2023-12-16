@@ -8,13 +8,15 @@
 @import "./components/global.scss";
 @import "./pages/anuncio.scss";
 @import "./pages/inicio.scss";
+@import "./pages/perfil.scss";
+@import "./mediaQueries/painelPerfil.scss";
 /*
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
 @import "./pages/carrinho.scss";
 @import "./pages/fimCarrinho.scss";
 @import "./pages/editarEndereco.scss";
-@import "./pages/perfilAdm.scss";
+
 @import "./pages/cadasterProduct.scss";
 @import "./pages/detailsPedido.scss";
 @import "./pages/telaPedidos.scss";
@@ -23,7 +25,6 @@
 @import "./pages/cadasterVariation.scss";
 @import "./pages/consultaClass.scss";
 @import "./pages/consultaVaris.scss";
-@import "./mediaQueries/painelPerfil.scss";
 @import "./mediaQueries/telaPedidos.scss";
 @import "./mediaQueries/detailsPedido.scss";
 @import "./mediaQueries/detailsMensagens.scss";
@@ -86,6 +87,7 @@ nav {
 
 .navMenu {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     z-index: 1000;
     position: fixed;
@@ -106,6 +108,19 @@ nav {
         margin: 2px 0px;
         color: $corPrimaria;
     }
+}
+
+#redes {
+    margin: 0px 0px 10px;
+    display: grid;
+    grid-template-areas: 'cadaRede cadaRede cadaRede';
+}
+
+.cadaRede {
+    display: flex;
+    justify-content: center;
+    border: 1px solid $corPrimaria;
+    padding: 10px;
 }
 
 #searchAndCar {

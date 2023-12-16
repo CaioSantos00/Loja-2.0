@@ -1,9 +1,3 @@
-#sectionPerfil {
-    display: grid;
-    justify-content: center;
-    margin: 20px;
-}
-
 #boxInfosPerfil {
     width: 300px;
     margin: auto;
@@ -31,15 +25,6 @@
 
 #emailPerfil {
     font-size: 0.9em;
-}
-
-#btnEditPerfil {
-    @include buttons(1em, $corSecundaria, $corPrimaria);
-    padding: 5px;
-    font-weight: bold;
-    &:hover {
-        background-color: $corBordasFormsUser;
-    }
 }
 
 #divFerramentas {

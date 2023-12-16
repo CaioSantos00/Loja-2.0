@@ -126,6 +126,26 @@
     padding: 3px;
 
 }*/
+.btnBlack {
+  font-size: 1em;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: 0;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnBlack:hover {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.btnBlack:hover {
+  background-color: rgb(44, 44, 44);
+}
+
 .title {
   font-size: 1.6em;
 }
@@ -331,13 +351,81 @@ textarea {
   width: 250px;
 }
 
+#boxInfosPerfil {
+  width: 300px;
+  margin: auto;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#infos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#imgPerfil {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+#emailPerfil {
+  font-size: 0.9em;
+}
+
+#divFerramentas {
+  margin: 20px 0px;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: "cardsFerramentas cardsFerramentas cardsFerramentas";
+  gap: 10px;
+}
+
+.cardsFerramentas {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+.cardsFerramentas a {
+  color: rgb(255, 255, 255);
+  margin-top: 5px;
+  background-color: rgb(13, 13, 13);
+}
+
+.divSvg {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 740px) {
+  #divFerramentas {
+    grid-template-areas: "cardsFerramentas";
+  }
+}
+@media screen and (max-width: 330px) {
+  #boxInfosPerfil {
+    width: 280px;
+  }
+}
 /*
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
 @import "./pages/carrinho.scss";
 @import "./pages/fimCarrinho.scss";
 @import "./pages/editarEndereco.scss";
-@import "./pages/perfilAdm.scss";
+
 @import "./pages/cadasterProduct.scss";
 @import "./pages/detailsPedido.scss";
 @import "./pages/telaPedidos.scss";
@@ -346,7 +434,6 @@ textarea {
 @import "./pages/cadasterVariation.scss";
 @import "./pages/consultaClass.scss";
 @import "./pages/consultaVaris.scss";
-@import "./mediaQueries/painelPerfil.scss";
 @import "./mediaQueries/telaPedidos.scss";
 @import "./mediaQueries/detailsPedido.scss";
 @import "./mediaQueries/detailsMensagens.scss";
@@ -429,6 +516,7 @@ nav {
 
 .navMenu {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   z-index: 1000;
   position: fixed;
@@ -448,6 +536,19 @@ nav {
   font-size: 1.4em;
   margin: 2px 0px;
   color: rgb(255, 255, 255);
+}
+
+#redes {
+  margin: 0px 0px 10px;
+  display: grid;
+  grid-template-areas: "cadaRede cadaRede cadaRede";
+}
+
+.cadaRede {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
 }
 
 #searchAndCar {

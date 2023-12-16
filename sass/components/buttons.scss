@@ -50,3 +50,10 @@
     padding: 3px;
     
 }*/
+
+.btnBlack {
+    @include buttons(1em, $corSecundaria, $corPrimaria)   ; 
+    &:hover {
+        background-color: $corHoverSemDes;
+    }
+}
