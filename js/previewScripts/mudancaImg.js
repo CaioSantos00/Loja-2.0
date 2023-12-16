@@ -127,8 +127,12 @@ mudaImg.src = arrayImgs[0]
     divBoxDescri.addEventListener('click', () => {
         descriptionFalseTrue = !descriptionFalseTrue
         console.log(descriptionFalseTrue)
-        description.style.display = 'block'
+        description.style.visibility = 'visible'
+        description.style.transform = 'translateY(0)'
+        divBoxDescri.style.height = '100%'
         if (!descriptionFalseTrue) {
-        description.style.display = 'none'
+        description.style.visibility = 'hidden'
+        description.style.transform = 'translateY(100%)'
+        divBoxDescri.style.height = '20px'
         }
     })

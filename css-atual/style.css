@@ -262,11 +262,13 @@ textarea {
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  transition: 0.5s;
+  height: 20px;
 }
 
 #description {
-  display: none;
+  transition: 0.4s;
+  visibility: hidden;
+  transform: translateY(100%);
   margin: 1% 0%;
 }
 
