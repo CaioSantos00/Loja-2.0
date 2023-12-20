@@ -10,6 +10,7 @@
 @import "./pages/inicio.scss";
 @import "./pages/perfil.scss";
 @import "./mediaQueries/painelPerfil.scss";
+@import "./pages/telaPedidos.scss";
 /*
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
@@ -19,7 +20,6 @@
 
 @import "./pages/cadasterProduct.scss";
 @import "./pages/detailsPedido.scss";
-@import "./pages/telaPedidos.scss";
 @import "./pages/telaErrorAdm.scss";
 @import "./pages/consultaProduct.scss";
 @import "./pages/cadasterVariation.scss";
@@ -132,6 +132,13 @@ align-items: center;
     display: flex;
     justify-content: flex-end;
     margin: 10px;
+}
+
+#volteInicio {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: $corPrimaria;
 }
 
 #removeMenu {

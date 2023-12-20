@@ -11,10 +11,10 @@
 </head>
 <body>
     <header class="header"></header>
-    <section id="sectionFormProduto">
+    <section id="sectionForms">
       <a href="painelPerfilAdm.html" id="volteInicio">Início</a>
-        <div id="formProduto">
-          <div id="titleForms">Cadastrar Produto</div>
+        <div id="forms">
+          <div class="titleForms">Cadastrar Produto</div>
           <input
             type="text"
             name="produto"
@@ -27,14 +27,6 @@
             placeholder="Preço do Produto"
             class="inputs"
           />
-          <div id="divHoldSelect">
-            <label for="classificacao">Selecionar Classificação:</label>
-            <select name="classificacao" id="selectClassi" class="inputs">
-  
-            </select>
-            <a href="/admin/cadastrarClassificacao" id="newClass">Clique aqui para criar uma classificação</a>
-          </div>
-
           <input
             type="file"
             name=""
@@ -42,9 +34,7 @@
             class="inputFile inputs"
           />
           <textarea class="inputs"></textarea>
-  <div id="divEsqueceBtnEntre">
-      <input type="submit" id="btnsForms" value="Cadastrar" />
-  </div>
+      <input type="submit" class="btnsConfirm" id="btnsForms" value="Cadastrar" />
 </div>
       </section>
 </body>

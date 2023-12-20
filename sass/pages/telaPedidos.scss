@@ -1,4 +1,11 @@
-#divInputConsulPedido {
+.cardPedido {
+    width: 250px;
+    background-color: $corSecundaria;
+    color: $corPrimaria;
+    padding: 10px;
+    border-radius: 8px;
+}
+/*#divInputConsulPedido {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +22,7 @@
     border-radius: 5px;
 }
 
+/*
 #btnBuscaPedido {
     @include buttons(1em, $corPrimaria, $corSecundaria);
     padding: 6px;
@@ -28,13 +36,6 @@
     margin: 30px 0px;
 }
 
-.cardPedido {
-    width: 250px;
-    background-color: $corSecundaria;
-    color: $corPrimaria;
-    padding: 10px;
-    border-radius: 8px;
-}
 
 .bolinhaStatusVerde {
     width: 10px;
@@ -66,4 +67,4 @@
     padding: 6px;
     margin: 10px 0px 0px;
 
-}
+}*/

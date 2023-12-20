@@ -71,7 +71,7 @@
 .btnDireEsquer {
   display: flex;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid rgb(255, 255, 255);
   background-color: transparent;
   width: 30px;
   height: 30px;
@@ -79,7 +79,7 @@
 
 .btnsCancel {
   font-size: 0.9em;
-  background-color: red;
+  background-color: rgb(255, 111, 111);
   color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
   padding: 5px;
@@ -101,7 +101,7 @@
 
 .btnsConfirm {
   font-size: 0.9em;
-  background-color: green;
+  background-color: rgb(93, 248, 93);
   color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255);
   padding: 5px;
@@ -118,14 +118,9 @@
   color: rgb(255, 255, 255);
 }
 .btnsConfirm:hover {
-  background-color: rgb(0, 255, 0);
+  background-color: rgb(17, 218, 17);
 }
 
-/*#btnsForms {
-    @include buttons(1.2em, $corPrimaria, $corSecundaria);
-    padding: 3px;
-
-}*/
 .btnBlack {
   font-size: 1em;
   background-color: rgb(0, 0, 0);
@@ -137,6 +132,9 @@
   outline: 0;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .btnBlack:hover {
   background-color: transparent;
@@ -183,7 +181,8 @@ textarea {
 #sectionForms {
   display: flex;
   justify-content: center;
-  margin: 10% 0px;
+  align-items: center;
+  flex-direction: column;
 }
 
 #forms {
@@ -211,6 +210,39 @@ textarea {
     width: 280px;
   }
 }
+#sectionProduct .cardsProdu {
+  background-color: black;
+  border-radius: 8px;
+}
+
+#divInputConsul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 0px 15px;
+}
+#divInputConsul button {
+  width: 80px;
+}
+
+.inputsConsultas {
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+  border: none;
+}
+
+.divEditExclu {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.divEditExclu button {
+  width: 50%;
+}
+
 #caixaAnuncio {
   display: flex;
   justify-content: center;
@@ -421,6 +453,77 @@ textarea {
     width: 280px;
   }
 }
+.cardPedido {
+  width: 250px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/*#divInputConsulPedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 30px;
+}
+
+.inputsConsultas {
+    width: 100%;
+    padding: 5px;
+    outline: 0;
+    border: 3px solid $corPrimaria;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*
+#btnBuscaPedido {
+    @include buttons(1em, $corPrimaria, $corSecundaria);
+    padding: 6px;
+}
+
+#holdTodosPedidos {
+    display: grid;
+    grid-template-areas: 'cardPedido cardPedido cardPedido cardPedido';
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0px;
+}
+
+
+.bolinhaStatusVerde {
+    width: 10px;
+    height: 10px;
+    background-color: $bolinhaStatusBom;
+    border-radius: 100%;
+    box-shadow: 0px 0px 3px 1px $bolinhaStatusBom;
+    margin-top: 4px;
+}
+
+.bolinhaStatusRed {
+    width: 10px;
+    height: 10px;
+    background-color: $bolinhaStatusRuim;
+    border-radius: 100%;
+    box-shadow: 0px 0px 3px 1px $bolinhaStatusRuim;
+    margin-top: 4px;
+}
+
+.situacaoPedido {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btnMaisDetails {
+    @include buttons(1em, $corPrimaria, $corSecundaria);
+    width: 100%;
+    padding: 6px;
+    margin: 10px 0px 0px;
+
+}*/
 /*
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
@@ -430,7 +533,6 @@ textarea {
 
 @import "./pages/cadasterProduct.scss";
 @import "./pages/detailsPedido.scss";
-@import "./pages/telaPedidos.scss";
 @import "./pages/telaErrorAdm.scss";
 @import "./pages/consultaProduct.scss";
 @import "./pages/cadasterVariation.scss";
@@ -562,6 +664,13 @@ nav {
   display: flex;
   justify-content: flex-end;
   margin: 10px;
+}
+
+#volteInicio {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  color: rgb(255, 255, 255);
 }
 
 #removeMenu {
