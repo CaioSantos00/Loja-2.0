@@ -12,6 +12,9 @@
 @import "./mediaQueries/painelPerfil.scss";
 @import "./pages/telaPedidos.scss";
 /*
+@import "./pages/detailsPedido.scss";
+@import "./pages/detailsMensagens.scss";
+@import "./pages/detailsPedido.scss";
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
 @import "./pages/carrinho.scss";
@@ -19,7 +22,6 @@
 @import "./pages/editarEndereco.scss";
 
 @import "./pages/cadasterProduct.scss";
-@import "./pages/detailsPedido.scss";
 @import "./pages/telaErrorAdm.scss";
 @import "./pages/consultaProduct.scss";
 @import "./pages/cadasterVariation.scss";
@@ -28,7 +30,7 @@
 @import "./mediaQueries/telaPedidos.scss";
 @import "./mediaQueries/detailsPedido.scss";
 @import "./mediaQueries/detailsMensagens.scss";
-@import "./pages/detailsMensagens.scss";*/
+*/
 
 // Media Queries
 
@@ -135,9 +137,10 @@ align-items: center;
 }
 
 #volteInicio {
+    width: 50px;
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 10px auto;
     color: $corPrimaria;
 }
 

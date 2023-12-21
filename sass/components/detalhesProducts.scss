@@ -1,0 +1,20 @@
+#sectionDetails {
+    margin: 20px 200px;
+}
+
+.titleDetalhes {
+    padding: 10px;
+    background-color: $corPrimaria;
+    color: $corSecundaria;
+}
+
+
+#divAlgumasInfos {
+    display: grid;
+    grid-template-areas: 'boxPrima boxSecond';
+}
+
+.borderBoxs {
+    padding: 10px;
+    border: 1px solid $corBordasClaras;
+}
