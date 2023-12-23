@@ -254,6 +254,13 @@ textarea {
   color: rgb(0, 0, 0);
 }
 
+#holdInfosCar {
+  margin: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 #divAlgumasInfos {
   display: grid;
   grid-template-areas: "boxPrima boxSecond";
@@ -262,6 +269,10 @@ textarea {
 .borderBoxs {
   padding: 10px;
   border: 1px solid rgb(63, 63, 63);
+}
+
+#precoTotal {
+  margin: 10px;
 }
 
 @media screen and (max-width: 1115px) {
@@ -324,7 +335,6 @@ textarea {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   overflow: hidden;
-  cursor: pointer;
 }
 
 #caixaAnuncio {
@@ -622,6 +632,30 @@ textarea {
     align-items: flex-start;
   }
 }
+#sectionErroAdm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 5%;
+}
+
+.boxInfoErro {
+  background-color: rgb(253, 179, 179);
+  border: 1px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+}
+
+.inforErro {
+  color: rgb(78, 78, 78);
+  font-size: 0.9em;
+}
+
+.titleInforErro {
+  font-size: 1.1em;
+}
+
 /*
 @import "./pages/detailsPedido.scss";
 @import "./pages/detailsMensagens.scss";
@@ -632,7 +666,6 @@ textarea {
 @import "./pages/editarEndereco.scss";
 
 @import "./pages/cadasterProduct.scss";
-@import "./pages/telaErrorAdm.scss";
 @import "./pages/consultaProduct.scss";
 @import "./pages/cadasterVariation.scss";
 @import "./pages/consultaClass.scss";
