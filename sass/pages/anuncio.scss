@@ -28,13 +28,6 @@
     height: 450px;
 }
 
-.riscoQuebra {
-    margin: 2% 0%;
-    width: 100%;
-    height: 2px;
-    background-color: $corPrimaria;
-}
-
 #divSize {
     margin: 1% 0%;
     button {
@@ -42,21 +35,21 @@
     }
 }
 
-#divBoxDescri {
-    text-align: center;
-    padding: 5px;
-    border: 1px solid $corPrimaria;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-    height: 20px;    
-}
-
 #description {
     transition: .4s;
     visibility: hidden;
     transform: translateY(100%);
     margin: 1% 0%;
+}
+
+#divBoxDescri {text-align: center;
+    height: 20px;
+}
+
+#divSaco {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
 @media screen and (max-width: 1115px) {

@@ -3,7 +3,6 @@
 //Priemira página do site
 @import "./pages/video.scss";
 @import "./mixins/mixinsBtns.scss";
-@import "./mixins/mixinsForms.scss";
 @import "./variaveis.scss";
 @import "./components/global.scss";
 @import "./pages/anuncio.scss";
@@ -11,13 +10,13 @@
 @import "./pages/perfil.scss";
 @import "./mediaQueries/painelPerfil.scss";
 @import "./pages/telaPedidos.scss";
+@import "./pages/carrinho.scss";
 /*
 @import "./pages/detailsPedido.scss";
 @import "./pages/detailsMensagens.scss";
 @import "./pages/detailsPedido.scss";
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
-@import "./pages/carrinho.scss";
 @import "./pages/fimCarrinho.scss";
 @import "./pages/editarEndereco.scss";
 

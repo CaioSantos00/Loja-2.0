@@ -18,3 +18,21 @@
     padding: 10px;
     border: 1px solid $corBordasClaras;
 }
+
+@media screen and (max-width: 1115px){
+    #sectionDetails {
+        margin: 20px 100px;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    #sectionDetails {
+        margin: 20px 20px;
+    } 
+}
+
+@media screen and (max-width: 440px){
+    #sectionDetails {
+        margin: 20px 10px;
+    } 
+}

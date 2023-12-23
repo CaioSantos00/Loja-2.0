@@ -1,200 +1,60 @@
-#sectionCar {
-    margin: 20px 280px;
+#divisionCar {
+    display: grid;
+    grid-template-areas: 'holdProducts holdInfosPagamento';
+    gap: 15px;
+    align-items: flex-start;
 }
 
-#divGridInfosCar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#divProdCar {
+#holdProducts {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.titleCars {
-    font-size: 1.5em;
+#holdCancelAdd {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.cardsCar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include fundoForms();
-    color: $corPrimaria;
+#holdInfosPagamento {
+    background-color: $corSecundaria;
     padding: 10px;
+    border-radius: 8px;
+    .btnsBorders {
+        margin-top: 10px;
+    }
 }
 
-.infosProductCar{
+.subTotal {
+    margin: 10px 0px;
+}
+
+#divFrete {
+    height: 17px;
+    overflow: hidden;
+}   
+
+#divInputFrete {
+    transition: .5s;
+    transform: translateY(10px);
+    margin: 5px 0px;
     display: flex;
-    align-items: center;
-}
-
-.imgsCar {
-    width: 100px;
-    margin-right: 10px;
-    border-radius: 5px;
-}
-
-.nomeProductCar {
-    font-size: 1.3em;
-}
-
-#divFinalizaCompra {  
-    @include fundoForms();
-    color: $corPrimaria;
-    padding: 10px;
-}
-
-#divInfosFinaisPreco{ 
-    display: flex;
-    justify-content: space-between;
-}
-
-#btnContinuar {
-    width: 100%;
-    @include buttons(1em, transparent, $corPrimaria);
-    border: 1px solid $corPrimaria;
-}
-
-#btnCancelarCompra {
-    @include buttons(1em, $btnsCancel, $corPrimaria);
-    border: none;
-    &:hover {
-        background-color: rgb(255, 100, 100);
+    gap: 5px;
+    input {
+        width: 100%;
     }
 }
 
-
-.holdInfosImgs {
-    display: flex;  
-    justify-content: space-around;
-    gap: 20px;
-    align-items: center;
-
-}
-
-.divBtnsCar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.btnExcluCar {
-    @include buttons(1em, $btnsCancel, $corPrimaria);
-    border: none;
-    padding: 6px;
-    &:hover {
-        background-color: rgb(253, 64, 64);
+@media screen and (max-width:1115px){
+    #divisionCar {
+        display: grid;
+        grid-template-areas: 'holdProducts';
+        gap: 15px;
+        align-items: flex-start;
     }
 }
 
-.qtdMaisMenosCar {
-    display: flex;
-    align-items: center;
-    border: 2px solid  $corPrimaria;
-    border-radius: 5px;
-}
+@media screen and (max-width:800px){
 
-.qtdValueCar {
-    margin: 0px 5px;
-}
-
-.btnsQtdsCar {
-    background-color: transparent;
-    color: $corPrimaria;
-    border: none;
-    padding: 5px 8px;
-}
-
-#divHoldBtnsFim {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-#divVejaMais {
-    margin: 20px 0px;
-}
-
-.titleMaisProdutos {
-    font-size: 1.4em;
-}
-
-@media screen and (max-width:1300px) {
-    #sectionCar {
-        margin: 20px 200px;
-    }
-}
-
-
-@media screen and (max-width:1117px) {
-    #sectionCar {
-        margin: 20px 150px;
-    }
-}
-
-
-@media screen and (max-width:1117px) {
-    #sectionCar {
-        margin: 20px 80px;
-    }
-}
-
-@media screen and (max-width: 601px) {
-    #sectionCar {
-        margin: 20px 60px;
-    }
-    .titleCars {
-        font-size: 1em;
-    }
-    .nomeProductCar {
-        font-size: 1em;
-    }
-    .divBtnsCar {
-        display: flex;
-        flex-direction: column;
-    }
-    .imgsCar {
-        width: 70px;
-    }
-    .titleMaisProdutos {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 420px) {
-    #sectionCar {
-        margin: 20px 20px;
-    }
-    .titleCars {
-        font-size: 0.9em;
-    }
-    .nomeProductCar {
-        font-size: 0.9em;
-    }
-    
-    .precoCar {
-        font-size: 0.9em;
-    }
-    .btnExcluCar {
-        font-size: 0.9em;
-        padding: 4px;
-        &:hover {
-            background-color: rgb(253, 64, 64);
-        }
-    }
-        
-    .qtdValueCar {
-        margin: 0px 3px;
-    }
-    
-    .btnsQtdsCar {
-        padding: 3px 3px;
-    }
-    
 }
