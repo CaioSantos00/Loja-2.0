@@ -8,9 +8,9 @@ divFrete.addEventListener('click', () =>{
     divFrete.style.overflow = 'visible'
     divFrete.style.height = '100%'
     divInputFrete.style.transform = 'translateY(0px)'
-    if (!descriptionFalseTrue) {
+    /*if (!descriptionFalseTrue) {
         divFrete.style.overflow = 'hidden'
         divInputFrete.style.transform = 'translateY(100%)'
         divFrete.style.height = '20px'
-    }
+    }*/
 })
