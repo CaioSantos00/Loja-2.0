@@ -155,6 +155,12 @@
   text-align: center;
 }
 
+.titleBorders {
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 8px;
+}
+
 .inputFile {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -266,11 +272,6 @@ textarea {
   grid-template-areas: "boxPrima boxSecond";
 }
 
-.borderBoxs {
-  padding: 10px;
-  border: 1px solid rgb(63, 63, 63);
-}
-
 #precoTotal {
   margin: 10px;
 }
@@ -335,6 +336,11 @@ textarea {
   border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   overflow: hidden;
+}
+
+.borderBoxs {
+  padding: 10px;
+  border: 1px solid rgb(63, 63, 63);
 }
 
 #caixaAnuncio {
@@ -656,13 +662,70 @@ textarea {
   font-size: 1.1em;
 }
 
+#infosFinaisEndereco {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+#infosFinaisEndereco button {
+  width: 100%;
+}
+
+.holdInfosEnd {
+  display: flex;
+  gap: 10px;
+}
+
+#infosEnd {
+  margin: 10px;
+}
+
+#enderecoCompleto {
+  display: flex;
+  gap: 3px;
+}
+
+#divTitleEdit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#precoTotalFim {
+  color: rgb(255, 255, 255);
+}
+
+#divInformacoesFinais {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#holdProductsFimCar {
+  margin: 10px;
+}
+
+#aEdit {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 400px) {
+  #btnFim {
+    font-size: 1em;
+    padding: 4px;
+  }
+  #divInformacoesFinais {
+    font-size: 1em;
+  }
+}
 /*
 @import "./pages/detailsPedido.scss";
 @import "./pages/detailsMensagens.scss";
 @import "./pages/detailsPedido.scss";
 @import "./pages/forms.scss";
 @import "./pages/formsUser.scss";
-@import "./pages/fimCarrinho.scss";
 @import "./pages/editarEndereco.scss";
 
 @import "./pages/cadasterProduct.scss";
